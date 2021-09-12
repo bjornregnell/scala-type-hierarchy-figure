@@ -1,0 +1,16 @@
+digraph {
+  rankdir=BT;
+  node [ fontname="Courier", fontcolor=blue, fontsize=13];
+
+  subgraph {
+    Nothing -> Int, Boolean, ovt -> AnyVal -> Any;
+  }
+  ovt [label = "...\nvalue types", fontsize = 12, fontname="Times-Italic"];
+  subgraph {
+    Nothing -> String, Vector, ort -> AnyRef -> Any;
+  }
+  ort [label = "...\nreference types", fontsize = 12, fontname="Times-Italic"];
+  //subgraph { Nothing -> Null -> AnyRef; }
+
+
+}

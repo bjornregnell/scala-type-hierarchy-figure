@@ -1,0 +1,15 @@
+digraph {
+  rankdir=BT;
+  subgraph {
+    Any;
+  }
+  subgraph {
+    Nothing -> Int, Boolean -> AnyVal -> Any;
+  }
+  subgraph {
+    Nothing -> Null -> Any;
+  }
+  subgraph {
+    Nothing -> String, Vector -> AnyRef -> Any;
+  }
+}

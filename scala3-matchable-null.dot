@@ -1,0 +1,15 @@
+digraph {
+  rankdir=BT;
+  subgraph {
+    Matchable -> Any;
+  }
+  subgraph {
+    Nothing -> Int, Boolean -> AnyVal -> Matchable;
+  }
+  subgraph {
+    Nothing -> Null -> Matchable;
+  }
+  subgraph {
+    Nothing -> String, Vector -> AnyRef -> Matchable;
+  }
+}
