@@ -1,0 +1,12 @@
+**/tmp
+**/old
+
+**/*.class
+
+**/target
+**/metals.sbt
+
+.bloop
+.metals
+.vscode
+.bsp
