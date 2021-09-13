@@ -13,7 +13,7 @@ def dot(in: String, tpe: String = "pdf"): Unit =
   sh("dot", s"-T$tpe", i, "-o", o)
 
 @main def run: Unit = 
-  println("Building dot files. TODO")
+  println("*** Building pdf from dot files. ***")
   for n <- Seq("simplified", "matchable") do
     dot(s"scala3-$n")
     dot(s"scala3-$n-null")
